@@ -24,6 +24,7 @@ body {
 .hero {
   width: 100%;
   background: url('/hero-bg.jpg') no-repeat;
+  position: relative;
 }
 .banner-animation {
   position: relative;
@@ -32,15 +33,27 @@ body {
 .banner-animation-wrapper {
   position: absolute;
   overflow: hidden;
-  width: calc(100% - 12rem);
-  height: 100%;
+  width: calc(100% - 10rem);
+  height: calc(100% - 10rem);
+  margin: 5rem;
+  box-shadow: 0px 4px 40px -1px rgba(0, 0, 0, 0.40);
+}
+@media screen and (max-width: 1024px) {
+  .banner-animation-wrapper {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+    margin: 2rem;
+  }
 }
 .banner-animation-wrapper-blur {
-    /* The image used */
+    /* The image used 
     background: url('/hero-bg.jpg');
-    /* Add the blur effect */
+    /* Add the blur effect 
     filter: blur(20px);
-    -webkit-filter: blur(20px);
+    -webkit-filter: blur(20px);*/
+    background: rgba(255, 255, 255, 0.20);
+
+backdrop-filter: blur(45px);
     position: absolute;
     height: 100%;
     width: 100%;
