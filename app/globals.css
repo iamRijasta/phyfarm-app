@@ -74,3 +74,9 @@ backdrop-filter: blur(45px);
   background-color: rgba(255,255,255,0.2);
   z-index: 1;
 }
+.device-section {
+  background-color: #F5F5EF;
+  width: 100%;
+  position: relative;
+  padding: 10rem;
+}

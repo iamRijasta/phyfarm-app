@@ -10,6 +10,14 @@ export default function Home() {
         </div><object type="image/svg+xml" data="/banner.svg" className={`banner-animation`}>svg-animation</object>
        </div>
       </section>
+      <section className={`device-section`}>
+        <object type="image/svg+xml" data="/PhyFarm-Device.svg" className={`device-animation`}>svg-animation</object>
+      </section>
+      <section className={`device-section`}>
+        <object type="image/svg+xml" data="/PhyFarm-Device-Mobile.svg" className={`device-animation`}>svg-animation</object>
+      </section>
+      
     </main>
+    
   )
 }
